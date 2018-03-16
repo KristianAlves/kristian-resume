@@ -57,7 +57,7 @@
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
           <% @profiles.each do |profile| %>
-           <p> <%= image_tag profile.picture.url(:large) %> </p>
+        <img class="img-fluid mb-5 d-block mx-auto" src="/example/img/kristian.jpg" alt="">
         <h1 class="text-uppercase mb-0"><%= profile.name %></h1> 
         <hr class="star-light">
         <h2> Web Developer - Full Stack</h2>
@@ -76,15 +76,21 @@
         <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
         <hr class="star-dark mb-5">
 
-        <% @projects.each do |project| %>
           <div class="col-md-6 col-lg-4">
               <div align="center">
-                <%= link_to (image_tag project.image.url(:medium)) , project.link %>
-                <h4> <%= project.title %> </h4>
+                <img class="img-fluid mb-5 d-block mx-auto" src="example/img/portfolio/pibi.png" width="245" alt="Comercial Pibi">
+                <h4> <a HREF="www.comercialpibi.com.br"> Comercial Pibi </h4>
               </div>
               <br>
           </div>
-        <% end %>
+
+          <div class="col-md-6 col-lg-4">
+              <div align="center">
+                <img class="img-fluid mb-5 d-block mx-auto" src="example/img/portfolio/moeda.png" height="50" width="300" alt="Conversão de Moedas">
+                <h4> <a HREF="kristian-exchange.herokuapp.com"> Conversão de Moedas </h4>
+              </div>
+              <br>
+          </div>
 
       </div>
     </section>

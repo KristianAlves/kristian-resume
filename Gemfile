@@ -30,7 +30,7 @@ gem 'devise'
 gem 'i18n'
 
 # Paperclip
-gem 'paperclip', '~> 5.1.0'
+gem 'paperclip'
 
 #Bootstrap
 gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
